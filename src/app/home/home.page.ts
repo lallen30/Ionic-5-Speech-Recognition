@@ -13,9 +13,9 @@ export class HomePage {
   checkPermission() {
     this.speechRecognition.hasPermission().then((permission) => {
       if (permission) {
-        alert('You have permission for speech recongition');
+        alert('You have permission for speech recognition');
       } else {
-        alert('You do not have permission for speech recongition');
+        alert('You do not have permission for speech recognition');
       }
     }, (err) => {
       alert(JSON.stringify(err));
